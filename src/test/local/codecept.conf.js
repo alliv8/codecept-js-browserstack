@@ -37,7 +37,10 @@ exports.config = {
             // }
         }
     },
-
+    // Add the `bootstrap` and `teardown` functions in your Codecept config file
+    // to enable BrowserStack Local. If you face issues, you maybe behind a
+    // restricted network. Contact our support team and automation specialists will
+    // be glad to assist you.
     bootstrap: function () {
         console.log("Connecting Local");
         exports.bs_local = new browserstack.Local();

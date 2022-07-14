@@ -17,21 +17,24 @@ exports.config = {
             capabilities: {
                 "os": "Windows",
                 "os_version": "10",
-                "browser_version": "latest",
-                "browserstack.local": "true",
+                "browser_version": "latest",                                
                 "project": "Codecept + WebdriverIO",
                 "build": "Local_Execution",
                 "name": "Local Test",
+                // Ensure sure you add the following capabilitiy for Local to work
+                "browserstack.local": "true",
+
             }
             //For W3C-based scripts, use the following capabilties:
             // capabilities: {
             //  "bstack:options" : {
             //    "os": "Windows",
             //    "osVersion": "10",
-            //    "local": "true",
             //    "projectName": "Codecept + WebdriverIO",
             //    "buildName": "Local_Execution",
             //    "sessionName": "Local Test",
+            //    // Ensure you add the following capabilitiy for Local to work
+            //    "local": "true",
             //  },
             //  "browserVersion": "latest",
             // }
